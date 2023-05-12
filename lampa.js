@@ -11,7 +11,8 @@ class Lampa{
     }
 
     setAllapot(){
-        this.#allapot=this.szinBeallit;
+        this.#allapot=!this.#allapot;
+        this.szinBeallit();
     }
     getid(){
         return this.#id;
@@ -23,14 +24,14 @@ class Lampa{
 
     szinBeallit(){
         if (this.#allapot===false) {
-            $(this.gedDivElem).css("background-color", "orange");
+            $(`div`).css("background-color", "orange");
         } else {
-            $(this.#divElem).css("background-color", "green");
+            $(`div`).css("background-color", "green");
         }
     }
 
     kattintasTrigger(){
-
+        kapcsolas();
     }
 
 }

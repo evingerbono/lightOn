@@ -11,12 +11,13 @@ header{
 article {
     display: flex;
     flex-wrap: wrap;
+    width: 310px;
+    justify-content: center;
 }
 div{
     border: 1px solid gray;
     border-radius: 50px;
     height: 100px;
-    max-width: 100px;
+    width: 100px;
     text-align: center;
-    flex: 1 1 calc(33.33%);
 }

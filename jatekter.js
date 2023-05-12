@@ -24,13 +24,21 @@ class JatekTer{
             }
          }
     }
+    getdb(){
+        return this.#db;
+    }
+    getlepes(){
+        return this.#lepes;
+    }
 
     getmeret(){
         return this.#meret;
     }
 
     szomszedokKeresese(id){
-
+        if (this.#allapotLista[id]!=this.#allapotLista[id-1]&&this.#allapotLista[id]!=this.#allapotLista[id+1]) {
+            
+        }
     }
     init(){
 
